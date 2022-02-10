@@ -20,7 +20,6 @@ public class CourseServiceImpl implements CourseService {
     public Course create(Course course) {
         generateCourseId(course);
         validateCourseName(course);
-        // TODO: boolean vacancy status
         courseRepository.create(course);
         return course;
     }

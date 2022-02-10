@@ -16,6 +16,10 @@
     <input th:field="*{courseName}" type="text" class="form-control" id="nameInput" aria-describedby="nameHelp" placeholder="Enter course's name">
     <small id="nameHelp" class="form-text text-muted">Please enter unique name.</small>
   </div>
+  <div class="form-group">
+    <label for="vacancyCheck">Vacancy Status</label>
+    <input type="checkbox" th:field="*{vacancyStatus}" id="vacancyCheck"/>
+  </div>
   <!--
   TODO: Vacancy status
   <div class="form-group">
