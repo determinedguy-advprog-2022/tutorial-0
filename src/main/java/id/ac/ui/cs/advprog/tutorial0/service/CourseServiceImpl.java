@@ -38,8 +38,8 @@ public class CourseServiceImpl implements CourseService {
         for (char letter: course.getCourseName().toCharArray()) {
             stringBuilder.append(String.valueOf((int)letter));
         }
-        String npm = stringBuilder.toString();
-        course.setCourseId(npm);
+        String courseId = stringBuilder.toString();
+        course.setCourseId(courseId);
     }
 
     @Override
